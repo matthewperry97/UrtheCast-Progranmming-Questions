@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		34A94D15246379F8005EAD82 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34A94D14246379F8005EAD82 /* main.cpp */; };
+		34A94D1D24637A52005EAD82 /* fibonacciCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34A94D1B24637A52005EAD82 /* fibonacciCalculator.cpp */; };
+		34A94D2024638B93005EAD82 /* arrayMerging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34A94D1E24638B93005EAD82 /* arrayMerging.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		34A94D11246379F8005EAD82 /* UrtheCast Programming Questions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "UrtheCast Programming Questions"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A94D14246379F8005EAD82 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		34A94D1B24637A52005EAD82 /* fibonacciCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fibonacciCalculator.cpp; sourceTree = "<group>"; };
+		34A94D1C24637A52005EAD82 /* fibonacciCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fibonacciCalculator.h; sourceTree = "<group>"; };
+		34A94D1E24638B93005EAD82 /* arrayMerging.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = arrayMerging.cpp; sourceTree = "<group>"; };
+		34A94D1F24638B93005EAD82 /* arrayMerging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arrayMerging.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				34A94D14246379F8005EAD82 /* main.cpp */,
+				34A94D1F24638B93005EAD82 /* arrayMerging.h */,
+				34A94D1E24638B93005EAD82 /* arrayMerging.cpp */,
+				34A94D1C24637A52005EAD82 /* fibonacciCalculator.h */,
+				34A94D1B24637A52005EAD82 /* fibonacciCalculator.cpp */,
 			);
 			path = "UrtheCast Programming Questions";
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A94D2024638B93005EAD82 /* arrayMerging.cpp in Sources */,
+				34A94D1D24637A52005EAD82 /* fibonacciCalculator.cpp in Sources */,
 				34A94D15246379F8005EAD82 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
