@@ -20,21 +20,6 @@ vector<string> ArrayMerger::calculateArray(const vector<string> &originalArray, 
 }
 
 // Private Methods
-vector<string>::iterator ArrayMerger::sortPartition(vector<string> &array, vector<string>::iterator start, vector<string>::iterator end) {
-    unsigned long pivot = (*end).length();
-    
-    for(vector<string>::iterator j = start; j <= end; j++) {
-        unsigned long valueLength = (*j).length();
-        if (valueLength <= pivot) {
-            this->swapArrayValues(array, start, j);
-            start++;
-        }
-    }
-    
-    this->swapArrayValues(array, start, end);
-    return start++;
-}
-
 void ArrayMerger::addToArray(vector<string> &mainArray, const vector<string> &addArray) {
     for (vector<string>::const_iterator iter = addArray.begin(); iter != addArray.end(); iter++) {
         string value = *iter;
@@ -69,24 +54,4 @@ void ArrayMerger::sortArray(vector<string> &array, vector<string>::iterator star
             }
             return false;
     });
-    
-//    Sub-sort by reverse alphabetical
-//    for (vector<string>::iterator iter = array.begin(); iter != (array.end()-1); iter++){
-//        string firstVal = *iter;
-//        string secondVal = *(iter+1);
-//        
-//        if (firstVal.length() == secondVal.length()) {
-//            if (secondVal > firstVal) {
-//                *iter = secondVal;
-//                *(iter+1) = firstVal;
-//            }
-//        }
-//    }
-}
-
-void ArrayMerger::swapArrayValues(vector<string> &array, vector<string>::iterator low, vector<string>::iterator high) {
-    long lowIndex = distance(array.begin(), low);
-    long highIndex = distance(array.begin(), high);
-    array[lowIndex] = (*high);
-    array[highIndex] = (*low);
 }
